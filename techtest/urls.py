@@ -24,7 +24,7 @@ urlpatterns = [
     path('api/', include('techtest.authors.urls')),
     path('api/profiles/', include('techtest.profiles.urls', namespace='profiles')),
     path("articles/", ArticlesListView.as_view(), name="articles-list"),
-    path("articles/<int:article_id>/", ArticleView.as_view(), name="article"),
+    path("article/<int:article_id>/", ArticleView.as_view(), name="article"),
     path("regions/", RegionsListView.as_view(), name="regions-list"),
     path("regions/<int:region_id>/", RegionView.as_view(), name="region"),
 ]
